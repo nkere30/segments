@@ -43,6 +43,8 @@ class Segment {
 
     /*
     Takes segment as argument and returns point of intersection of two segments, if there is such.
+    Intersection point is calculated by the formula of given two points on each line segment, where
+    t and u are real numbers.
      */
     Point intersectionPoint(Segment another) {
             double t = ((startX - another.startX)*(another.startY - another.endY)-(startY - another.startY)*(another.startX - another.endX))/
