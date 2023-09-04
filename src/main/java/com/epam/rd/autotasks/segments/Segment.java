@@ -42,7 +42,7 @@ class Segment {
     }
 
     /*
-    Takes segment as argument and returns point of intersection of two segments
+    Takes segment as argument and returns point of intersection of two segments, if there is such.
      */
     Point intersectionPoint(Segment another) {
             double t = ((startX - another.startX)*(another.startY - another.endY)-(startY - another.startY)*(another.startX - another.endX))/
