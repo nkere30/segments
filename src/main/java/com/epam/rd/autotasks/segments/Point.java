@@ -21,6 +21,6 @@ class Point {
     public boolean equals(Object obj) {
         if(getClass()!=obj.getClass()) return false;
         Point newPoint = (Point) obj;
-        return newPoint.getX()==x&&newPoint.getY()==y;
+        return (newPoint.getX()== x) && (newPoint.getY() == y);
     }
 }
